@@ -33,10 +33,6 @@ for cog in cogs_list:
 # бот запущен
 @bot.event
 async def on_ready(arg='playing', *, names=f'{settings["bot"]} | {settings["prefix"]}help') -> None:
-    def time4logs():
-        return f'[{datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")}]'
-    print('\n', time4logs(), f"Статус: онлайн\n\n| Пинг: [{round(bot.latency * 1000)}] ms\n| Префикс: {settings['prefix']}\n\n--------------------\n")
-    await bot.change_presence(activity=discord.Game(name=names))
     start = time.time()
 
 # ошибки
