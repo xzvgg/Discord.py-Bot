@@ -1,0 +1,7 @@
+discord
+discord.py
+requests
+asyncio
+colorama
+psutil
+discordSuperUtils
